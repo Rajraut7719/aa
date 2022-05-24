@@ -56,6 +56,22 @@ def gen_frames():  # generate frame by frame from camera
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/attendance')
+def attendance():
+    """Video attendance page"""
+    return render_template('attendance.html')
+
+@app.route('/face_ecognition')
+def face_ecognition():
+    """Video face_ecognition page"""
+    return render_template('face_ecognition.html')
+
+@app.route('/attendance_Excel')
+def attendance_Excel():
+    """Video attendance_Excel page"""
+    return render_template('attendance_Excel.html')
+
     
 @app.route('/result')
 def result():
